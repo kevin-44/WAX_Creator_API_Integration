@@ -1,2 +1,3 @@
-# WAX_Creator_API_Integration
-How to integrate the WAX Creator API
+<p align = "center">
+	<img alt = "Header" src = "img/header.png">
+</p>
