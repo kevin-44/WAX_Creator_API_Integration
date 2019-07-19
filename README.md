@@ -26,4 +26,4 @@
 
 # Overview
 
-The WAX Creator API allows developers to create NFTs on the WAX Blockchain through external sources.
+The [WAX Creator API](https://github.com/worldwide-asset-exchange/wax-creator) allows developers to create NFTs on the WAX Blockchain through external sources.
