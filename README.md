@@ -166,7 +166,7 @@ Create a new user and add it to the `sudo` <sup>[(about)](https://en.wikipedia.o
 
 #### Install Dependencies
 
-If you're using Ubuntu 18.04, use Tasksel to install a **LAMP stack** (*Linux, Apache, MySQL, PHP*):
+If you're using Ubuntu 18.04, use Tasksel to install a [LAMP stack](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) (*Linux, Apache, MySQL, PHP*):
 
 `sudo tasksel install lamp-server`
 
