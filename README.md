@@ -37,7 +37,7 @@ The [WAX Creator API](https://github.com/worldwide-asset-exchange/wax-creator) a
 
 > **Note**: `Verified Authentic` NFTs take longer to approve than non-`Verified Authentic` NFTs. The `Verified Authentic` status of an NFT is shown on [WAX Trade](https://trade.wax.io) and [OPSkins](https://opskins.com).
 
-> **Note**: You need WAX Points to create a collectible with `Instant-Sell` enabled.
+> **Note**: You need [WAX Points](https://blog.opskins.com/can-now-use-wax-tokens-opskins) to create a collectible with `Instant-Sell` enabled.
 
 ## Extensions
 
