@@ -26,4 +26,4 @@
 
 # Overview
 
-The [WAX Creator API](https://github.com/worldwide-asset-exchange/wax-creator) allows developers to create NFTs (WAX Collectible Cards, WAX Stickers & WAX Digital Art) on the WAX Blockchain for free through external sources.
+The [WAX Creator API](https://github.com/worldwide-asset-exchange/wax-creator) allows developers to create NFTs (WAX Collectible Cards, WAX Stickers & WAX Digital Art) on the WAX Blockchain for free via external sources.
