@@ -108,11 +108,11 @@ Regardless of the company you decide to rent a VPS from, you must get it online 
 
 <img alt = "DigitalOcean - Create Droplet" src = "img/digitalocean_create_droplet.png">
 
-Typically after creating a VPS, its log in credentials are sent via email - have them ready because you'll need them in the next step!
+Typically after creating a VPS, its log in credentials are sent via email - have them ready as you'll need them in the next step!
 
 <img alt = "DigitalOcean - Credentials Email" src = "img/digitalocean_credentials_email.png">
 
-> **Note**: Hosting a website on a Windows server is possible; however, it isn't recommended for beginners - many network adjustments must be applied to prevent attacks by third parties.
+> **Note**: Hosting a website on a [Windows Server](https://en.wikipedia.org/wiki/Windows_Server) is possible; however, it isn't recommended for beginners - many network adjustments must be applied to prevent attacks by third parties.
 
 #### Log In & Prepare Your VPS
 
