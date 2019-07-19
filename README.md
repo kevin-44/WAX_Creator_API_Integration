@@ -175,7 +175,7 @@ If you're using Ubuntu 18.04, use [Tasksel](https://help.ubuntu.com/community/Ta
 - Install the base PHP package and the PHP Extension and Application Repository: `sudo apt install php php-pear`
 - Add the PHP module for Apache: `sudo apt install libapache2-mod-php`
 
-Any website you create should be placed in `/var/www/html`. You can access one of your websites at `http://165.227.28.23/some-website` via a web browser, where `165.227.28.23` is your VPS' IP address and `some-website` is the path to the website you wish to render.
+Any website you create should be placed in `/var/www/html`. You can access one of your websites at `http://IP/some-website` via a web browser, where `IP` is your VPS' IP address and `some-website` is the path to the website you wish to render.
 
 #### Register a Domain & Configure Name-based Virtual Hosts
 
@@ -222,7 +222,7 @@ Select your preferred validation method:
 
 <img alt = "NameCheap SSL - Validation Method" src = "img/namecheap_ssl_validation_method.png">
 
-Go forward with the selected domain ownership validation process. At the end, typically two files in a compressed archive will be sent to you via email - download it! With a [FTP Client](https://en.wikipedia.org/wiki/Comparison_of_FTP_client_software) ([FileZilla](https://filezilla-project.org) is highly recommended) connected through the `sftp` protocol (e.g. `sftp://IP`, where `IP` is your VPS' IP address - this is the value of `host` on the FTP client), upload the files in the compressed archive (`.crt` & `.ca-bundle`) to `/etc/ssl/certs` and upload the `.key` file that was generated alongside the `.csr` file to `/etc/ssl/private`. See the following screenshots for reference:
+Go forward with the selected domain ownership validation process. At the end, typically two files in a compressed archive will be sent to you via email - download & extract it! With a [FTP Client](https://en.wikipedia.org/wiki/Comparison_of_FTP_client_software) ([FileZilla](https://filezilla-project.org) is highly recommended) connected through the `sftp` protocol (`sftp://IP`, where `IP` is your VPS' IP address - this is the value of `host` on the FTP client), upload the files in the compressed archive (`.crt` & `.ca-bundle`) to `/etc/ssl/certs` and upload the `.key` file that was generated alongside the `.csr` file to `/etc/ssl/private`. See the following screenshots for reference:
 
 <img alt = "FileZilla - Connect Reference" src = "img/filezilla_connect_reference.png">
 
