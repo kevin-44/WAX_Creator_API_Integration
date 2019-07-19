@@ -104,7 +104,7 @@ Hosting a website implies that you rent a [VPS](https://en.wikipedia.org/wiki/Vi
 
 #### Order/Create a VPS
 
-Regardless of the company you decide to rent a VPS from, you must get it online with the [OS](https://en.wikipedia.org/wiki/Operating_system) (*Operating System*) of your choice installed. **Ubuntu** is recommended for beginners.
+Regardless of the company you decide to rent a VPS from, you must get it online with the [OS](https://en.wikipedia.org/wiki/Operating_system) (*Operating System*) of your choice installed. [Ubuntu](https://en.wikipedia.org/wiki/Ubuntu) is recommended for beginners.
 
 <img alt = "DigitalOcean - Create Droplet" src = "img/digitalocean_create_droplet.png">
 
