@@ -318,7 +318,7 @@ Finally, restart **Apache** for the changes to take effect:
 
 #### If you purchased an SSL certificate, click [here](#set-up-an-opskins-account) to continue.
 
-Configure the name-based virtual hosts so that your system knows what to do when someone visits your domain! For that:
+Configure the [Name-based Virtual Hosts](https://en.wikipedia.org/wiki/Virtual_hosting) so that your system knows what to do when someone visits your domain! For that:
 
 * Disable the default Apache virtual host: `sudo a2dissite *default`
 * Create the necessary folders for your website, replacing `example.com` with your domain name: `sudo mkdir -p /var/www/html/example.com/{includes,public_html}`
