@@ -7,16 +7,19 @@
 		<td>
 			<table>
 				<td align = "center">
-					<a href = "https://github.com/worldwide-asset-exchange/wax-creator" target = "_blank">Documentation for WAX Creator API</a>
+					<a href = "https://github.com/worldwide-asset-exchange/wax-creator">API Documentation for WAX Creator</a>
 				</td>
 				<td align = "center">
-					<a href = "https://creator.wax.io" target = "_blank">WAX Collectible Creator</a>
+					<a href = "https://creator.wax.io">WAX Collectible Creator</a>
 				</td>
 				<td align = "center">
-					<a href = "https://opskins.com" target = "_blank">Buy & Sell Collectibles</a>
+					<a href = "https://opskins.com">Buy & Sell Collectibles</a>
 				</td>
 				<td align = "center">
-					<a href = "https://trade.wax.io" target = "_blank">Trade Collectibles</a>
+					<a href = "https://trade.wax.io">Trade Collectibles</a>
+				</td>
+				<td align = "center">
+					<a href = "https://wax.io/blog/introducing-the-wax-creator-a-self-service-tool-to-create-nfts-on-the-wax-blockchain">About WAX Creator</a>
 				</td>
 			</table>
 		</td>
