@@ -3,22 +3,16 @@
 </p>
 
 <table>
-	<tr>
-		<td>
-			<table>
-				<td align = "center">
-					<a href = "https://github.com/worldwide-asset-exchange/wax-creator" target = "_blank">Documentation for WAX Creator API</a>
-				</td>
-				<td align = "center">
-					<a href = "https://creator.wax.io" target = "_blank">WAX Collectible Creator</a>
-				</td>
-				<td align = "center">
-					<a href = "https://opskins.com" target = "_blank">Buy & Sell Digital Items</a>
-				</td>
-				<td align = "center">
-					<a href = "https://trade.wax.io" target = "_blank">Trade Digital Items</a>
-				</td>
-			</table>
-		</td>
-	</tr>
+	<td align = "center">
+		<a href = "https://github.com/worldwide-asset-exchange/wax-creator" target = "_blank">Documentation for WAX Creator API</a>
+	</td>
+	<td align = "center">
+		<a href = "https://creator.wax.io" target = "_blank">WAX Collectible Creator</a>
+	</td>
+	<td align = "center">
+		<a href = "https://opskins.com" target = "_blank">Buy & Sell Collectibles</a>
+	</td>
+	<td align = "center">
+		<a href = "https://trade.wax.io" target = "_blank">Trade Collectibles</a>
+	</td>
 </table>
