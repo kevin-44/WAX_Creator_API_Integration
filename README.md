@@ -94,7 +94,7 @@ After installing XAMPP (or the above by any other mean), start **Apache** (a.k.a
 
 <img alt = "XAMPP - Start Apache (The Web Server)" src = "img/xampp_start_apache_server.png">
 
-Any website you create should be placed in the `htdocs` folder where you installed XAMPP. You can access one of your websites at `http://localhost/some-website` via a web browser, where `some-website` is the path to a specific website you wish to render.
+Any website you create should be placed in the `htdocs` folder where you installed XAMPP. You can access one of your websites at `http://localhost/some-website` via a web browser, where `some-website` is the path to the website you wish to render.
 
 ### Production Environment
 
