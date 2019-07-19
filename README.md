@@ -45,7 +45,7 @@ The [WAX Creator API](https://github.com/worldwide-asset-exchange/wax-creator) a
 
 #### Recommended
 
-- [Execute API Call](blob/master/includes/execute_api_call.php)
+- [Execute API Call](includes/execute_api_call.php)
 
 #### Other
 
