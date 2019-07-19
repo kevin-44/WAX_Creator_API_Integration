@@ -158,17 +158,9 @@ No other command in this tutorial should be executed as `root` <sup>[(about)](ht
 
 Create a new user and add it to the `sudo` <sup>[(about)](https://en.wikipedia.org/wiki/Sudo)</sup> group so you'll have administrative privileges:
 
-- Create the user, replacing `example_user` with a username of your choice:
-
-`adduser example_user` (you'll be prompt to assign a password and enter information about the user)
-
-- Add the user to the `sudo` group, replacing `example_user` with the username of the user you previously created:
-
-`adduser example_user sudo`
-
-- Switch to the user, again by replacing `example_user`:
-
-`su example_user`
+- Create the user, replacing `example_user` with a username of your choice: `adduser example_user` (you'll be prompt to assign a password and enter information about the user)
+- Add the user to the `sudo` group, replacing `example_user` with the username of the user you previously created: `adduser example_user sudo`
+- Switch to the user, again by replacing `example_user`: `su example_user`
 
 > **Note**: Log into your VPS with the credentials you previously created from here on out (add `sudo` to the beginning of a command if administrative privileges is required); although, you can always use the `su` command to switch to the user.
 
