@@ -63,4 +63,4 @@ The [WAX Creator API](https://github.com/worldwide-asset-exchange/wax-creator) a
 
 Know of an extension that isn't listed above? [Open an issue](../../issues) and it will be added to the list!
 
-> **Note**: Although there are many different extensions you can use (not limited to the list above) to invoke the WAX Creator API, the first extension under `Recommended` in each category will be the extension used in this tutorial. However, you are free to use any other extension!
+> **Note**: Although there are many different extensions you can use (not limited to the list above) to invoke the WAX Creator API, the first extension under `Recommended` in each category will be the extension used in this tutorial.
