@@ -61,6 +61,6 @@ The [WAX Creator API](https://github.com/worldwide-asset-exchange/wax-creator) a
 
 - (None)
 
-Know of an extension that isn't listed above? [Open an issue](../../../../../issues) and it will be added to the list!
+Know of an extension that isn't listed above? [Open an issue](../../issues) and it will be added to the list!
 
 > **Note**: Although there are many different extensions you can use (not limited to the list above) to invoke the WAX ExpressTrade API, the first extension under `Recommended` in each category will be the extension used in this tutorial - you are free to use any other extension however!
