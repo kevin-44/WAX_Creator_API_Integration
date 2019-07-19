@@ -45,7 +45,7 @@ The [WAX Creator API](https://github.com/worldwide-asset-exchange/wax-creator) a
 
 #### Recommended
 
-- `execute_api_call.php` (it can be downloaded from this repository)
+- [Execute API Call](blob/master/includes/execute_api_call.php)
 
 #### Other
 
@@ -55,15 +55,12 @@ The [WAX Creator API](https://github.com/worldwide-asset-exchange/wax-creator) a
 
 #### Recommended
 
-- [node-expresstrade](https://github.com/TheTimmaeh/node-expresstrade)
-- [node-wax-expresstrade](https://github.com/karer/node-wax-expresstrade)
+- (None)
 
 #### Other
 
 - (None)
 
-Know of an extension that isn't listed above? [Open an issue](https://github.com/Kevin-Reinke/WAX_ExpressTrade_Integration/issues/new) and it will be added based on its functionality and quality!
-
-> **Note**: Extensions prefixed with `official` were released by [OPSkins](https://opskins.com).
+Know of an extension that isn't listed above? [Open an issue](https://github.com/Kevin-Reinke/WAX_ExpressTrade_Integration/issues/new) and it will be added to the list!
 
 > **Note**: Although there are many different extensions you can use (not limited to the list above) to invoke the WAX ExpressTrade API, the first extension under `Recommended` in each category will be the extension used in this tutorial - you are free to use any other extension however!
