@@ -23,6 +23,13 @@
 #### Table of Contents
 
 * [Overview](#overview)
+	* [Extensions](#extensions)
+		* [PHP](#php)
+			* [Recommended](#recommended)
+			* [Other](#other)
+		* [Node.js](#nodejs)
+			* [Recommended](#recommended-1)
+			* [Other](#other-1)
 
 # Overview
 
@@ -31,3 +38,32 @@ The [WAX Creator API](https://github.com/worldwide-asset-exchange/wax-creator) a
 > **Note**: `Verified Authentic` NFTs take longer to approve than non-`Verified Authentic` NFTs. The `Verified Authentic` status of an NFT is shown on [WAX Trade](https://trade.wax.io) and [OPSkins](https://opskins.com).
 
 > **Note**: You need WAX Points to create a collectible with `Instant-Sell` enabled.
+
+## Extensions
+
+### PHP
+
+#### Recommended
+
+- `execute_api_call.php` (it can be downloaded from this repository)
+
+#### Other
+
+- (None)
+
+### Node.js
+
+#### Recommended
+
+- [node-expresstrade](https://github.com/TheTimmaeh/node-expresstrade)
+- [node-wax-expresstrade](https://github.com/karer/node-wax-expresstrade)
+
+#### Other
+
+- (None)
+
+Know of an extension that isn't listed above? [Open an issue](https://github.com/Kevin-Reinke/WAX_ExpressTrade_Integration/issues/new) and it will be added based on its functionality and quality!
+
+> **Note**: Extensions prefixed with `official` were released by [OPSkins](https://opskins.com).
+
+> **Note**: Although there are many different extensions you can use (not limited to the list above) to invoke the WAX ExpressTrade API, the first extension under `Recommended` in each category will be the extension used in this tutorial - you are free to use any other extension however!
