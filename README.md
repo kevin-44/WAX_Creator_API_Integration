@@ -39,6 +39,10 @@
 			* [Create a New User](#create-a-new-user)
 			* [Install Dependencies](#install-dependencies)
 			* [Register a Domain & Configure Name-based Virtual Hosts](#register-a-domain--configure-name-based-virtual-hosts)
+	* [Set up an Account](#set-up-an-account)
+		* [Create an Account](#create-an-account)
+		* [Enable 2FA (Two-Factor Authentication)](#enable-2fa-two-factor-authentication)
+		* [Request an API Key](#request-an-api-key)
 
 # Overview
 
@@ -78,7 +82,7 @@ Know of an extension that isn't listed above? [Open an issue](../../issues) and 
 
 ## Beginners
 
-Before anything, you will need to install a [Web Server](https://en.wikipedia.org/wiki/Web_server) and [PHP](https://en.wikipedia.org/wiki/PHP). If you already know how to do this and you're not interested in registering a domain alongside the configuration that comes with it, skip to the [next step](#set-up-an-opskins-account); otherwise, you can click [here](#register-a-domain--configure-name-based-virtual-hosts) for information related to registering a domain and its configuration.
+Before anything, you will need to install a [Web Server](https://en.wikipedia.org/wiki/Web_server) and [PHP](https://en.wikipedia.org/wiki/PHP). If you already know how to do this and you're not interested in registering a domain alongside the configuration that comes with it, skip to the [next step](#set-up-an-account); otherwise, you can click [here](#register-a-domain--configure-name-based-virtual-hosts) for information related to registering a domain and its configuration.
 
 > **Note**: Instructions related to setting up a [MySQL Server](https://en.wikipedia.org/wiki/MySQL) won't be addressed in this tutorial; however, it's recommended that you go forward with the process if you plan on creating a website that serves user accounts, saves their settings and/or stores any other data in general.
 
@@ -179,7 +183,7 @@ Any website you create should be placed in `/var/www/html`. You can access one o
 
 #### Register a Domain & Configure Name-based Virtual Hosts
 
-Your website (or at least the `Apache2 Ubuntu Default Page`) should be accessible at this point. It's recommended that you assign a domain to your website if you plan on having visitors from all around the world; however, it isn't technically necessary - your visitors would just have trouble remembering your VPS' IP address! If you do not wish to assign a domain to your website, skip to the [next step](#set-up-an-opskins-account).
+Your website (or at least the `Apache2 Ubuntu Default Page`) should be accessible at this point. It's recommended that you assign a domain to your website if you plan on having visitors from all around the world; however, it isn't technically necessary - your visitors would just have trouble remembering your VPS' IP address! If you do not wish to assign a domain to your website, skip to the [next step](#set-up-an-account).
 
 ---
 
@@ -316,7 +320,7 @@ Finally, restart **Apache** for the changes to take effect:
 
 ---
 
-#### If you purchased an SSL certificate, click [here](#set-up-an-opskins-account) to continue.
+#### If you purchased an SSL certificate, click [here](#set-up-an-account) to continue.
 
 Configure the [Name-based Virtual Hosts](https://en.wikipedia.org/wiki/Virtual_hosting) so that your system knows what to do when someone visits your domain! For that:
 
