@@ -26,4 +26,4 @@
 
 # Overview
 
-The [WAX Creator API](https://github.com/worldwide-asset-exchange/wax-creator) allows developers to create [NFTs](https://en.wikipedia.org/wiki/Non-fungible_token) (WAX Collectible Cards, WAX Stickers & WAX Digital Art) on the WAX Blockchain for free via external sources! NFTs must be approved by the OPSkins support team, before minted on the WAX Blockchain, and sent to the user's [WAX ExpressTrade Inventory](https://trade.wax.io/inventory). NFTs can be `Verified Authentic`, meaning proof of ownership can be provided for the NFT.
+The [WAX Creator API](https://github.com/worldwide-asset-exchange/wax-creator) allows developers to create [NFTs](https://en.wikipedia.org/wiki/Non-fungible_token) (WAX Collectible Cards, WAX Stickers & WAX Digital Art) on the WAX Blockchain for free via external sources! NFTs must be approved by the OPSkins support team, before minted on the WAX Blockchain, and sent to the user's [WAX ExpressTrade Inventory](https://trade.wax.io/inventory). A NFT can be `Verified Authentic`, meaning proof of ownership can be provided for that NFT.
