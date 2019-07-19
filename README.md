@@ -189,7 +189,7 @@ Before you go ahead and purchase a domain, decide whether you want an [SSL Certi
 
 > **Note**: You aren't forced to pay for a domain as there are free options (such as [.tk](http://www.dot.tk)), but you are limiting the array of extensions available to you. It's important to note that some people tend to stay away from websites with free domains, so go with a paid domain if you're aiming for success!
 
-After registering a domain of your choice, modify its **host records**, replacing `165.227.28.23` with your VPS' IP address:
+After registering a domain of your choice, modify its [Host Records](https://en.wikipedia.org/wiki/Domain_Name_System), replacing `165.227.28.23` with your VPS' IP address:
 
 * **Type**: A Record, **Host**: @, **Value**: 165.227.28.23, **TTL**: Automatic
 * **Type**: A Record, **Host**: www, **Value**: 165.227.28.23, **TTL**: Automatic
