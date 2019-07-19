@@ -230,7 +230,7 @@ Go forward with the selected domain ownership validation process. At the end, ty
 
 > **Note**: The `Username` and `Password` field on FileZilla correspond to your VPS log in credentials.
 
-You will then need to enable SSL mode so that Apache is able to run an encrypted HTTPS connection:
+You will then need to enable **SSL Mode** so that Apache is able to run an encrypted [HTTPS](https://en.wikipedia.org/wiki/HTTPS) connection:
 
 `sudo a2enmod ssl`
 
