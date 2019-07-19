@@ -26,4 +26,4 @@
 
 # Overview
 
-(text)
+The WAX Creator is a self-service tool that allows anyone to create an NFT on the WAX Blockchain for free.
