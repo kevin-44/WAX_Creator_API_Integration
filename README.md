@@ -26,4 +26,4 @@
 
 # Overview
 
-The WAX Creator is a self-service tool that allows anyone to create an NFT on the WAX Blockchain for free.
+The WAX Creator API allows developers to create NFTs on the WAX Blockchain via external games, websites, and dApps.
