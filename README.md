@@ -156,7 +156,7 @@ No other command in this tutorial should be executed as `root` (besides the ones
 
 ---
 
-Create a new user and add it to the `[sudo](https://en.wikipedia.org/wiki/Sudo)` group so you'll have administrative privileges:
+Create a new user and add it to the `<a href = "https://en.wikipedia.org/wiki/Sudo">sudo</a>` group so you'll have administrative privileges:
 
 - Create the user, replacing `example_user` with a username of your choice: `adduser example_user` (you'll be prompt to assign a password and enter information about the user)
 - Add the user to the `sudo` group, replacing `example_user` with the username of the user you previously created: `adduser example_user sudo`
