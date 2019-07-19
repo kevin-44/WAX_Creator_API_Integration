@@ -187,7 +187,7 @@ There are many companies you can register a [Domain Name](https://en.wikipedia.o
 
 Before you go ahead and purchase a domain, decide whether you want an [SSL Certificate](https://en.wikipedia.org/wiki/Public_key_certificate) or not since purchasing one after you register a domain is often more expensive (you must pay the full price as no discount will be applied)! An SSL certificate will encrypt your visitors' information, thus improving the security of your website - it is recommended that you install one!
 
-> **Note**: You aren't forced to pay for a domain as there are free options (such as [.tk](http://www.dot.tk)), but you are limiting the array of extensions available to you. It's important to know that some people tend to stay away from websites with free domains - go with a paid domain if you're aiming for success!
+> **Note**: You aren't forced to pay for a domain as there are free options (such as [.tk](http://www.dot.tk)), but you are limiting the array of extensions available to you. It's important to note that some people tend to stay away from websites with free domains, so go with a paid domain if you're aiming for success!
 
 After registering a domain of your choice, modify its **host records**, replacing `165.227.28.23` with your VPS' IP address:
 
