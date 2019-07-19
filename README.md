@@ -1,6 +1,8 @@
 <p align = "center">
 	<img alt = "Header" src = "img/header.png">
-	\
+</p>
+
+<p align = "center">
 	<table>
 		<td align = "center">
 			<a href = "https://github.com/worldwide-asset-exchange/wax-creator" target = "_blank">Documentation for WAX Creator API</a>
