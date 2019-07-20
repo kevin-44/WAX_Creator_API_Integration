@@ -616,4 +616,4 @@ When you receive an error, it may typically look like this:
 }
 ```
 
-Go to the [API Documentation for the WAX Creator](https://github.com/worldwide-asset-exchange/wax-creator) to see all the other interfaces/endpoints you can call in the same manner as the `create` & `read` endpoint (as shown above).
+See the [API Documentation for the WAX Creator](https://github.com/worldwide-asset-exchange/wax-creator) to view all the other interfaces/endpoints you can call in the same manner as the `create` & `read` endpoint (as shown above).
