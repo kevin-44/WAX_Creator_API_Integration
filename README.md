@@ -488,6 +488,10 @@ Go to your [WAX AllAccess account security page](https://all-access.wax.io/accou
 
 <img alt = "WAX AllAccess - Make Sure 2FA Is Enabled" src = "img/wax_allaccess_make_sure_2fa_is_enabled.png">
 
-Log into the [WAX Creator](https://creator.wax.io) with your WAX AllAccess account:
+[Log into the WAX Creator](https://creator.wax.io) with your WAX AllAccess account:
 
 <img alt = "WAX Creator - Log In" src = "img/wax_creator_log_in.png">
+
+Go to your [WAX Creator account page](https://creator.wax.io/user) and hit `ENABLE API KEY` to request a **WAX Creator API Key**:
+
+<img alt = "WAX Creator - Request API Key Step 1" src = "img/wax_creator_request_api_key_step_1.png">
