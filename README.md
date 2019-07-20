@@ -584,7 +584,7 @@ The `data` parameter in the `ExecuteAPICall` function should be structured diffe
 <?php
 	include_once "../includes/execute_api_call.php"; // include the extension used to invoke the WAX Creator API
 
-	$response = ExecuteAPICall("GET", "IItemSubmission/read", "api_token=Your WAX Creator API Key&submission_id=6758"); // api_token - your WAX Creator API Key, submission_id - ID of the submission | method, endpoint, data (optional), url (optional - used to call any other API besides the WAX Creator API
+	$response = ExecuteAPICall("GET", "IItemSubmission/read", "api_token=Your WAX Creator API Key&submission_id=6758"); // api_token - your WAX Creator API Key, submission_id - ID of the submission to retrieve info of | method, endpoint, data (optional), url (optional - used to call any other API besides the WAX Creator API
 
 	if($response != NULL) // check if the WAX Creator API responded (it may be offline or under maintenance)
 	{
