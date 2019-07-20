@@ -574,7 +574,7 @@ All [endpoints](https://github.com/worldwide-asset-exchange/wax-creator) of the 
 
 As you can see in the screenshots above, the request was successfully received by the WAX Creator API and the collectible has been submitted by verifying on the [WAX Creator](https://creator.wax.io/my-collectibles)!
 
-> **Note**: You can view all the other parameters the `create` endpoint supports by clicking [here](https://github.com/worldwide-asset-exchange/wax-item-creation-management/blob/master/IItemSubmission/create.md). Documentation for all other endpoints can be found on the same repository. 
+> **Note**: You can view all the parameters the `create` endpoint supports by clicking [here](https://github.com/worldwide-asset-exchange/wax-item-creation-management/blob/master/IItemSubmission/create.md). Documentation for all other endpoints can be found on the same repository. 
 
 The `data` parameter in the `ExecuteAPICall` function should be structured differently when sending requests to endpoints that use the `POST` method:
 
