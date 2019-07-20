@@ -427,7 +427,7 @@ After successfully enabling 2FA on your OPSkins account, you can now obtain your
 
 <img alt = "OPSkins - Enable 2FA Step 12" src = "img/opskins_enable_2fa_step_12.png">
 
-A `.json` file will begin to download. If you open it you'll see a similar multidimensional [JSON array](https://www.w3schools.com/js/js_json_arrays.asp) as to the one below:
+A `.json` file will begin to download. If you open it you'll see a similar multidimensional [JSON Array](https://www.w3schools.com/js/js_json_arrays.asp) as to the one below:
 
 ```
 {
