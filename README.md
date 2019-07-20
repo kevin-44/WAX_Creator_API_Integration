@@ -480,7 +480,7 @@ Simply find the right entry, make sure the `issuer` is `OPSkins`, and get your `
 
 ## Request a WAX Creator API Key
 
-An API key is required to invoke the WAX Creator API.
+A **WAX Creator API Key** is required to invoke the WAX Creator API.
 
 ---
 
