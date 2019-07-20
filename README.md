@@ -446,6 +446,8 @@ A `.json` file will begin to download. If you open it you'll see a similar multi
 
 The only value you need from this `.json` file is `secret` (in case of the example above, that value is `IUPQTTSIL5WIDUNS`). Keep your secret in a safe place, and use it to restore your account or for development purposes such as programmatically generating 2FA codes!
 
+> **Note**: Your 2FA `secret` isn't needed for this tutorial; however, it can be useful for other things!
+
 **(Optional)** If you are unfamiliar with JSON arrays and have more than one account added to Authenticator, you'll see more entires as shown below:
 
 ```
