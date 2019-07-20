@@ -507,7 +507,7 @@ Copy your **WAX Creator API Key** and keep it in hand as you'll need it later!
 
 ## Install Dependencies
 
-As stated in the [overview](#overview) at the beginning of the tutorial, the first extension under `Recommended` will be used - you are free to use any [other extension](#extensions) however!
+As stated in the [Overview](#overview) at the beginning of this tutorial, the first extension under `Recommended` will be used; however, you are free to use any [other extension](#extensions)!
 
 Download `execute_api_call.php` (it can be downloaded from this repository) and place it inside your `includes` directory.
 
