@@ -538,21 +538,30 @@ All [endpoints](https://github.com/worldwide-asset-exchange/wax-creator) of the 
 
 ```php
 <?php
-	include_once "../includes/execute_api_call.php";
+	include_once "../includes/execute_api_call.php"; // include the extension used to invoke the WAX Creator API
 
-	$response = ExecuteAPICall("GET", "IItem/GetItems/v1", array("key=Your API Key&sku_filter=100,102")); // method, endpoint, data (optional), url (optional - exists to call any other API besides WAX ExpressTrade)
+	$response = ExecuteAPICall("POST", "IItemSubmission/create", array( // method, endpoint, data (optional), url (optional - used to call any other API besides the WAX Creator API)
+		"api_token" => "Your_WAX_Creator_API_Key", // your WAX Creator API Key
+		"internal_app_id" => 12, // 12 for WAX Stickers, 14 for WAX Digital Art, or 32 for WAX Collectible Cards
+		"name" => "WAX Creator API Tutorial", // simpler/shorter version of `market_name` (below)
+		"market_name" => "Sticker | WAX Creator API Tutorial", // must be unique per `internal_app_id`
+		"image_generic" => "https://static.wax.io/d-img/dynamic-apps/img/php5cfizh-9137032131.png", // must be a `static.wax.io` URL
+		"amount" => 1, // number of items to be generated (copies)
+		"color" => "#FFD700", // color hex (#AA0000), related with rarity
+		"rarity_name" => "Legendary" // rarity name (Legendary, Rare, etc).
+	));
 
-	if($response != NULL) // check if the WAX ExpressTrade API responded
+	if($response != NULL) // check if the WAX Creator API responded (it may be offline or under maintenance)
 	{
-		$data = json_decode($response, true); // return an array to easily process the response
+		$response_data = json_decode($response, true); // return an array to easily process the response
 
-		echo "status: " . $data['status'] . "<br><br>"; // example on how to access data in the array 
+		echo "success: " . (($response_data['success']) ? ("true") : ("false")) . "<br><br>"; // example on how to access data in the array
 
-		var_dump($data); // output the response for debugging purposes
+		var_dump($response_data); // output the response for debugging purposes
 	}
 	else
 	{
-		echo "The WAX ExpressTrade API didn't respond, it may be offline or under maintenance";
+		echo "The WAX Creator API didn't respond, it may be offline or under maintenance. Please try again later."; // output a message on the user's browser
 	}
 ?>
 ```
