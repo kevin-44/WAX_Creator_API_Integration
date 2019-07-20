@@ -541,14 +541,16 @@ All [endpoints](https://github.com/worldwide-asset-exchange/wax-creator) of the 
 	include_once "../includes/execute_api_call.php"; // include the extension used to invoke the WAX Creator API
 
 	$response = ExecuteAPICall("POST", "IItemSubmission/create", array( // method, endpoint, data (optional), url (optional - used to call any other API besides the WAX Creator API)
-		"api_token" => "Your_WAX_Creator_API_Key", // your WAX Creator API Key
+		"api_token" => "Your WAX Creator API Key", // your WAX Creator API Key
 		"internal_app_id" => 12, // 12 for WAX Stickers, 14 for WAX Digital Art, or 32 for WAX Collectible Cards
-		"name" => "WAX Creator API Tutorial", // simpler/shorter version of `market_name` (below)
-		"market_name" => "Sticker | WAX Creator API Tutorial", // must be unique per `internal_app_id`
+		"name" => "WAX Creator API", // simpler/shorter version of `market_name` (below)
+		"market_name" => "Sticker | WAX Creator API", // must be unique per `internal_app_id`
 		"image_generic" => "https://static.wax.io/d-img/dynamic-apps/img/php5cfizh-9137032131.png", // must be a `static.wax.io` URL
 		"amount" => 1, // number of items to be generated (copies)
 		"color" => "#FFD700", // color hex (#AA0000), related with rarity
-		"rarity_name" => "Legendary" // rarity name (Legendary, Rare, etc).
+		"rarity_name" => "Legendary", // rarity name (Legendary, Rare, etc).
+		"collection_name" => "WAX Creator API", // name of the collection this item belongs to
+		"json_attributes" => '{"markdown_description": "WAX Creator API"}' // description of the item
 	));
 
 	if($response != NULL) // check if the WAX Creator API responded (it may be offline or under maintenance)
