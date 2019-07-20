@@ -603,6 +603,8 @@ The `data` parameter in the `ExecuteAPICall` function should be structured diffe
 
 <img alt = "Read Endpoint - Response" src = "img/read_endpoint_response.png">
 
+As you can see in the screenshot above, the request was successfully received by the WAX Creator API and information of the previously submitted collectible was returned!
+
 > **Note**: An **&** separates each parameter (you may have seen this in an URL of a website).
 
 All successful API responses have return data within the `response` object. A typical response may look like this:
