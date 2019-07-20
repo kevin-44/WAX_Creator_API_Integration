@@ -444,7 +444,7 @@ A `.json` file will begin to download. If you open it you'll see a similar multi
 }
 ```
 
-The only value you need from this `.json` file is `secret` (in case of the example above, that value is `IUPQTTSIL5WIDUNS`) - keep that value in hand as you may need it depending on the features you plan on adding to your website!
+The only value you need from this `.json` file is `secret` (in case of the example above, that value is `IUPQTTSIL5WIDUNS`).
 
 **(Optional)** If you are unfamiliar with JSON arrays and have more than one account added to Authenticator, you'll see more entires as shown below:
 
@@ -473,4 +473,4 @@ The only value you need from this `.json` file is `secret` (in case of the examp
 }
 ```
 
-Simply find the right entry (base your search on the `account` index), make sure the `issuer` is `OPSkins` and get your `secret` from the array.
+Simply find the right entry (base your search on the `account` index), make sure the `issuer` is `OPSkins`, and get your `secret` from the array.
