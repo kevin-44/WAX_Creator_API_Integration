@@ -70,7 +70,7 @@ The [WAX Creator API](https://github.com/worldwide-asset-exchange/wax-creator) a
 
 #### Recommended
 
-- (None)
+- [SendGrid's NodeJS HTTP Client](https://github.com/sendgrid/nodejs-http-client)
 
 #### Other
 
