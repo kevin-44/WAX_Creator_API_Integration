@@ -534,7 +534,7 @@ Calling the WAX Creator API implies that you either send a [GET](https://www.w3s
 
 ---
 
-All [endpoints](https://github.com/OPSkins/trade-opskins-api) of the WAX ExpressTrade API can be called using the same base structure. For instance, the [GetItems](https://github.com/OPSkins/trade-opskins-api/blob/master/IItem/GetItems.md) endpoint can be called as shown:
+All [endpoints](https://github.com/worldwide-asset-exchange/wax-creator) of the WAX Creator API can be called using the same base structure. For instance, the [create](https://github.com/worldwide-asset-exchange/wax-item-creation-management/blob/master/IItemSubmission/create.md) endpoint can be called as followed:
 
 ```
 <?php
