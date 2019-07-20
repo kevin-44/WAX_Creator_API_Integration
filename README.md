@@ -375,9 +375,7 @@ OPSkins is pretty much the main platform of all WAX services that require authen
 
 You can create an OPSkins account by a) [signing in through Steam for the first time](https://opskins.com/?loc=login) or b) [entering your information in to a form](https://opskins.com/?loc=login&register):
 
-<img alt = "OPSkins - Sign in Through Steam" src = "img/opskins_sign_in_through_steam.png">
-
-<img alt = "OPSkins - Register" src = "img/opskins_register.png">
+<img alt = "WAX All Access - Sign Up" src = "img/wax_allaccess_sign_up.png">
 
 ### Enable 2FA (Two-Factor Authentication)
 
