@@ -42,6 +42,7 @@
 	* [Set up an OPSkins Account](#set-up-an-opskins-account)
 		* [Create an Account](#create-an-account)
 		* [Enable 2FA (Two-Factor Authentication)](#enable-2fa-two-factor-authentication)
+	* [Request an API Key](#request-an-api-key)
 
 # Overview
 
@@ -476,3 +477,5 @@ The only value you need from this `.json` file is `secret` (in case of the examp
 ```
 
 Simply find the right entry, make sure the `issuer` is `OPSkins`, and get your `secret` from the array.
+
+## Request an API Key
