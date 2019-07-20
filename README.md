@@ -578,8 +578,25 @@ As you can see in the screenshots above, the request was successfully received b
 
 The `data` parameter in the `ExecuteAPICall` function should be structured differently when sending requests to endpoints that use the `POST` method:
 
-```
-array("key" => "Your API Key", "sku_filter" => "100,102")
+```php
+<?php
+	include_once "../includes/execute_api_call.php"; // include the extension used to invoke the WAX Creator API
+
+	$response = ExecuteAPICall("GET", "IItemSubmission/read", "api_token=zbTFZgVHJVp8QxrYRJrV9HuGutU738i1fWO2wjrUXtfN3FOZOzbbnmGaoSHc&submission_id=6758"); // api_token - your WAX Creator API Key, submission_id - ID of the submission | method, endpoint, data (optional), url (optional - used to call any other API besides the WAX Creator API
+
+	if($response != NULL) // check if the WAX Creator API responded (it may be offline or under maintenance)
+	{
+		$response_data = json_decode($response, true); // return an array to easily process the response
+
+		echo "success: " . (($response_data['success']) ? ("true") : ("false")) . "<br><br>"; // example on how to access data in the array
+
+		var_dump($response_data); // output the response for debugging purposes
+	}
+	else
+	{
+		echo "The WAX Creator API didn't respond, it may be offline or under maintenance. Please try again later."; // output a message on the user's browser
+	}
+?>
 ```
 
 > **Note**: Your `API key` should be passed as `key` (as shown above). The [API documentation for WAX ExpressTrade](https://github.com/OPSkins/trade-opskins-api) doesn't specifically state this.
