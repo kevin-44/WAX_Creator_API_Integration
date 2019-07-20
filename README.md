@@ -281,7 +281,7 @@ Moving forward, it's now time to configure the [Name-based Virtual Hosts](https:
 
 * **(Optional)** The previous configuration will redirect requests to the root directory (`example.com`) to the `www` subdomain (`www.example.com`) while enforcing the `HTTPS` protocol. If you'd like the previous reversed (`www.example.com` redirects to `example.com`), paste the following instead (just remember to make the same replacements):
 
-	```
+	```html
 	<VirtualHost *:80>
 		ServerName example.com
 		ServerAlias www.example.com
@@ -331,7 +331,7 @@ Configure the [Name-based Virtual Hosts](https://en.wikipedia.org/wiki/Virtual_h
 * Create the virtual host file for your website, replacing `example.com` with your domain name: `sudo nano /etc/apache2/sites-available/example.com.conf` (the text editor will prompt, follow the step of your choice below)
 * Paste the following configuration, replacing `example.com` with your domain name:
 
-	```
+	```html
 	<VirtualHost *:80>
 		ServerName example.com
 
@@ -348,7 +348,7 @@ Configure the [Name-based Virtual Hosts](https://en.wikipedia.org/wiki/Virtual_h
 
 * **(Optional)** The previous configuration will redirect requests to the root directory (`example.com`) to the `www` subdomain (`www.example.com`). If you'd like the previous reversed (`www.example.com` redirects to `example.com`), paste the following instead (just remember to make the same replacement):
 
-	```
+	```html
 	<VirtualHost *:80>
 		ServerName www.example.com
 
