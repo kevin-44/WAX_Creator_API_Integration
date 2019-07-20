@@ -42,7 +42,7 @@
 	* [Set up an OPSkins Account](#set-up-an-opskins-account)
 		* [Create an Account](#create-an-account)
 		* [Enable 2FA (Two-Factor Authentication)](#enable-2fa-two-factor-authentication)
-	* [Request a WAX Creator API Key](#request-an-api-key)
+	* [Request an API Key](#request-an-api-key)
 	* [Install Dependencies](#install-dependencies-1)
 	* [Calling the API](#calling-the-api)
 
