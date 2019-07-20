@@ -500,4 +500,4 @@ Go to your [WAX Creator account page](https://creator.wax.io/user) and hit `ENAB
 
 Copy your **WAX Creator API Key** and keep it in hand as you'll need it later!
 
-> **Warning!** If you give your **WAX Creator API Key** to anyone, they can invoke the WAX Creator API without your consent.
+> **Warning!** If you give your **WAX Creator API Key** to anyone, they can invoke the WAX Creator API on your behalf without your consent.
