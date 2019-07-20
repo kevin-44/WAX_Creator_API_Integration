@@ -576,7 +576,7 @@ As you can see in the screenshots above, the request was successfully received b
 
 > **Note**: You can view all the parameters the `create` endpoint supports by clicking [here](https://github.com/worldwide-asset-exchange/wax-item-creation-management/blob/master/IItemSubmission/create.md). Documentation for all other endpoints can be found on the same repository. 
 
-The `data` parameter in the `ExecuteAPICall` function should be structured differently when sending requests to endpoints that use the `POST` method:
+The `data` parameter in the `ExecuteAPICall` function should be structured differently when sending requests to endpoints that use the `GET` method:
 
 ```php
 <?php
