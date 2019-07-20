@@ -45,6 +45,7 @@
 	* [Request an API Key](#request-an-api-key)
 	* [Install Dependencies](#install-dependencies-1)
 	* [Calling the API](#calling-the-api)
+* [Related APIs](#related-apis)
 
 # Overview
 
@@ -617,3 +618,5 @@ When you receive an error, it may typically look like this:
 ```
 
 See the [API Documentation for the WAX Creator](https://github.com/worldwide-asset-exchange/wax-creator) to view all the other interfaces/endpoints you can call in the same manner as the `create` & `read` endpoint (as previously shown above).
+
+# Related APIs
