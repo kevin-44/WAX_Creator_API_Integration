@@ -422,7 +422,7 @@ Enter the current valid two-factor authentication code shown on Authenticator:
 
 <img alt = "OPSkins - Enable 2FA Step 10" src = "img/opskins_enable_2fa_step_10.png">
 
-After successfully enabling 2FA on your OPSkins account, you can now obtain your `secret` from the Authenticator extension! Click on the `Settings` icon, hit the `Export / Import` option, and then press the `Download Backup File` button:
+After successfully enabling 2FA for your OPSkins account, you can now obtain your `secret` from the Authenticator extension! Click on the `Settings` icon, hit the `Export / Import` option, and then press the `Download Backup File` button:
 
 <img alt = "OPSkins - Enable 2FA Step 7" src = "img/opskins_enable_2fa_step_7.png">
 
@@ -479,3 +479,11 @@ The only value you need from this `.json` file is `secret` (in case of the examp
 Simply find the right entry, make sure the `issuer` is `OPSkins`, and get your `secret` from the array.
 
 ## Request a WAX Creator API Key
+
+An API key is required to invoke the WAX Creator API.
+
+---
+
+Go to your [WAX AllAccess account security page](https://all-access.wax.io/account/security) and make sure 2FA is enabled for your account:
+
+<img alt = "WAX AllAccess - Make Sure 2FA Is Enabled" src = "img/wax_allaccess_make_sure_2fa_is_enabled.png">
