@@ -42,7 +42,7 @@
 	* [Set up an OPSkins Account](#set-up-an-opskins-account)
 		* [Create an Account](#create-an-account)
 		* [Enable 2FA (Two-Factor Authentication)](#enable-2fa-two-factor-authentication)
-	* [Request a WAX Creator API Key](#request-a-wax-creator-api-key)
+	* [Request a WAX Creator API Key](#request-an-api-key)
 	* [Install Dependencies](#install-dependencies-1)
 	* [Calling the API](#calling-the-api)
 
@@ -480,7 +480,7 @@ The only value you need from this `.json` file is `secret` (in case of the examp
 
 Simply find the right entry, make sure the `issuer` is `OPSkins`, and get your `secret` from the array.
 
-## Request a WAX Creator API Key
+## Request an API Key
 
 A **WAX Creator API Key** is required to invoke the WAX Creator API, you should request one!
 
@@ -528,7 +528,7 @@ Create a `.php` file, name it `index.php`, place it inside of your `public_html`
 
 ## Calling the API
 
-Calling the [WAX ExpressTrade API](https://github.com/OPSkins/trade-opskins-api) implies that you either send a [GET](https://www.w3schools.com/tags/ref_httpmethods.asp) or [POST](https://www.w3schools.com/tags/ref_httpmethods.asp) request to `https://api-trade.opskins.com`, this will tell the server to perform an action on its end and return a response.
+Calling the WAX Creator API implies that you either send a [GET](https://www.w3schools.com/tags/ref_httpmethods.asp) or [POST](https://www.w3schools.com/tags/ref_httpmethods.asp) request to `https://api-trade.opskins.com`, this will tell the server to perform an action on its end and return a response.
 
 > **Note**: Calls to `api-trade.opskins.com` should always be executed over the `HTTPS` protocol; otherwise, your calls will be redirected and you will receive erroneous responses. `https://api-trade.opskins.com` is the default value for the `url` parameter in the `ExecuteAPICall` function (loaded from the `execute_api_call.php` extension).
 
