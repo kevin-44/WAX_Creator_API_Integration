@@ -542,10 +542,10 @@ All [endpoints](https://github.com/worldwide-asset-exchange/wax-creator) of the 
 
 	$response = ExecuteAPICall("POST", "IItemSubmission/create", array( // method, endpoint, data (optional), url (optional - used to call any other API besides the WAX Creator API)
 		"api_token" => "Your WAX Creator API Key", // your WAX Creator API Key
-		"internal_app_id" => 12, // 12 for WAX Stickers, 14 for WAX Digital Art, or 32 for WAX Collectible Cards
-		"name" => "WAX Creator API", // simpler/shorter version of `market_name` (below)
-		"market_name" => "Sticker | WAX Creator API", // must be unique per `internal_app_id`
-		"image_generic" => "https://static.wax.io/d-img/dynamic-apps/img/php5cfizh-9137032131.png", // must be a `static.wax.io` URL
+		"internal_app_id" => 12, // WAX App ID: 12 for WAX Stickers, 14 for WAX Digital Art, or 32 for WAX Collectible Cards
+		"name" => "WAX Creator API", // item name (simpler/shorter version of `market_name`)
+		"market_name" => "Sticker | WAX Creator API", // full market name (must be unique per `internal_app_id`)
+		"image_generic" => "https://static.wax.io/d-img/dynamic-apps/img/php5cfizh-9137032131.png", // item image url (must be a `static.wax.io` URL)
 		"amount" => 1, // number of items to be generated (copies)
 		"color" => "#FFD700", // color hex (#AA0000), related with rarity
 		"rarity_name" => "Legendary", // rarity name (Legendary, Rare, etc).
