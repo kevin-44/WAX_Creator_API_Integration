@@ -615,3 +615,5 @@ A typical error response may look like this:
 	"error":" The amount must be an integer."
 }
 ```
+
+Go to the [API Documentation for the WAX Creator](https://github.com/worldwide-asset-exchange/wax-creator) to see all the other interfaces/endpoints that can be called in the same manner as shown above.
