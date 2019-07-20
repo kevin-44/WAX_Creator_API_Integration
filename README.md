@@ -568,6 +568,10 @@ All [endpoints](https://github.com/worldwide-asset-exchange/wax-creator) of the 
 ?>
 ```
 
+<img alt = "Create Endpoint - Response" src = "img/create_endpoint_response.png">
+
+<img alt = "Create Endpoint - Outcome" src = "img/create_endpoint_outcome.png">
+
 The `data` parameter in the `ExecuteAPICall` function should be structured differently when sending requests to endpoints that use the `POST` method:
 
 ```
