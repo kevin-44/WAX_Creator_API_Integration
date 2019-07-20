@@ -528,7 +528,7 @@ Create a `.php` file, name it `index.php`, place it inside of your `public_html`
 
 ## Calling the API
 
-Calling the WAX Creator API implies that you either send a [GET](https://www.w3schools.com/tags/ref_httpmethods.asp) or [POST](https://www.w3schools.com/tags/ref_httpmethods.asp) request to `https://api-trade.opskins.com`, this will tell the server to perform an action on its end and return a response.
+Calling the WAX Creator API implies that you either send a [GET](https://www.w3schools.com/tags/ref_httpmethods.asp) or [POST](https://www.w3schools.com/tags/ref_httpmethods.asp) request to `https://api-icm.wax.io/api`, this will tell the server to perform an action on its end and return a response.
 
 > **Note**: Calls to `api-trade.opskins.com` should always be executed over the `HTTPS` protocol; otherwise, your calls will be redirected and you will receive erroneous responses. `https://api-trade.opskins.com` is the default value for the `url` parameter in the `ExecuteAPICall` function (loaded from the `execute_api_call.php` extension).
 
