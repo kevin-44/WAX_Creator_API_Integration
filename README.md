@@ -572,6 +572,8 @@ All [endpoints](https://github.com/worldwide-asset-exchange/wax-creator) of the 
 
 <img alt = "Create Endpoint - Outcome" src = "img/create_endpoint_outcome.png">
 
+As you can see in the screenshots above, the request was successfully received by the WAX Creator API and the collectible has been submitted by verifying on the [WAX Creator](https://creator.wax.io)!
+
 The `data` parameter in the `ExecuteAPICall` function should be structured differently when sending requests to endpoints that use the `POST` method:
 
 ```
