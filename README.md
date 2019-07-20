@@ -42,7 +42,6 @@
 	* [Set up an OPSkins Account](#set-up-an-opskins-account)
 		* [Create an Account](#create-an-account)
 		* [Enable 2FA (Two-Factor Authentication)](#enable-2fa-two-factor-authentication)
-		* [Request an API Key](#request-an-api-key)
 
 # Overview
 
@@ -370,7 +369,7 @@ Finally, restart **Apache** for the changes to take effect:
 
 ## Set up an OPSkins Account
 
-An [OPSkins](https://opskins.com) account is required for some endpoints of the [WAX ExpressTrade API](https://github.com/OPSkins/trade-opskins-api); therefore, it is recommended that you create one!
+An [OPSkins](https://opskins.com) account 
 
 > **Note**: Although you can invoke the WAX ExpressTrade API without an OPSkins account, you are limiting the number of endpoints available to you. Features such as automatically receiving the **$0.25** commission (that is 10% of the base price of a [Skeleton Key](https://opskins.com/?app=1912_1&loc=shop_search&max=2.51&min=2.49&sort=lh&type=key)) per case opened from the [ICase](https://github.com/OPSkins/trade-opskins-api/tree/master/ICase)/[ICaseSite](https://github.com/OPSkins/trade-opskins-api/tree/master/ICaseSite) interface is also unavailable without an OPSkins account.
 
@@ -481,25 +480,3 @@ The only value you need from this `.json` file is `secret` (in case of the examp
 ```
 
 Simply find the right entry (base your search on the `account` index), make sure the `issuer` is `OPSkins` and get your `secret` from the array.
-
-### Request an API Key
-
-As there are endpoints that require a 2FA code, there also are endpoints that require an API key.
-
-> **Note**: The [ICase](https://github.com/OPSkins/trade-opskins-api/tree/master/ICase)/[ICaseSite](https://github.com/OPSkins/trade-opskins-api/tree/master/ICaseSite) interface requires a completely different API key. That API key can be obtained by creating a special case-website user with the [CreateVCaseUser](https://github.com/OPSkins/trade-opskins-api/blob/master/IUser/CreateVCaseUser.md) endpoint.
-
----
-
-Go to your [OPSkins advanced account options page](https://opskins.com/?loc=store_account#collapseAA), tick the `I have read and agree to the API Terms of Use` checkbox and hit the `Request API Key` button:
-
-<img alt = "OPSkins - Request API Key Step 1" src = "img/opskins_request_api_key_step_1.png">
-
-A modal will prompt, enter your 2FA code:
-
-<img alt = "OPSkins - Request API Key Step 2" src = "img/opskins_request_api_key_step_2.png">
-
-You will then be issued an API key - along with your 2FA `secret`, keep it in hand as you'll also need it depending on what you plan on adding to your website!
-
-> **Warning!** If you give your API key to anyone, they can steal all of your items.
-
-> **Note**: If you ever lose your API key or if you think it has been breached, you can always retrieve it or generate a new one on your [OPSkins advanced account options page](https://opskins.com/?loc=store_account#collapseAA).
