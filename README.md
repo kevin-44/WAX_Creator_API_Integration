@@ -601,7 +601,7 @@ The `data` parameter in the `ExecuteAPICall` function should be structured diffe
 ?>
 ```
 
-> **Note**: **&** separates each parameter (you may have seen this in an URL of a website on your web browser).
+> **Note**: **&** separates each parameter (you may have seen this in an URL of a website).
 
 All successful API responses have return data within the `response` object. A typical response may look like this:
 
