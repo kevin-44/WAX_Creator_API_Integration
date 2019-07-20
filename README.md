@@ -373,7 +373,7 @@ OPSkins is pretty much the main platform for all WAX services that require authe
 
 ### Create an Account
 
-You can create an OPSkins account by [signing up with Facebook, Google, Steam, or E-mail](https://opskins.com/?loc=login&register):
+You can create an OPSkins account by [signing up with Facebook, Google, Steam, or Email](https://opskins.com/?loc=login&register):
 
 <img alt = "WAX All Access - Sign Up" src = "img/wax_allaccess_sign_up.png">
 
@@ -403,7 +403,7 @@ If the selection of the barcode was successful, a browser alert should prompt st
 
 <img alt = "OPSkins - Enable 2FA Step 6" src = "img/opskins_enable_2fa_step_6.png">
 
-> **Note**: You can alternatively add your account by entering the secret shown on the second modal on Authenticator (this can be done by clicking on the `Edit` icon - it's located on the top far right corner). **This secret is the same secret (but without the whitespaces) you need to generate a valid two-factor authentication code programmatically; however, it is recommended that you learn how to obtain it from the Authenticator extension in case you lose/forget it in the future.**
+> **Note**: You can alternatively add your account by entering the `secret` shown on the second modal on Authenticator, this can be done by clicking on the `Edit` icon - it's located on the top far right corner.
 
 On Authenticator, click on the `Settings` icon located on the top left corner and hit `Sync Clock with Google`:
 
