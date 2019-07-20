@@ -487,3 +487,7 @@ A **WAX Creator API Key** is required to invoke the WAX Creator API.
 Go to your [WAX AllAccess account security page](https://all-access.wax.io/account/security) and make sure 2FA is enabled for your account:
 
 <img alt = "WAX AllAccess - Make Sure 2FA Is Enabled" src = "img/wax_allaccess_make_sure_2fa_is_enabled.png">
+
+Log into the [WAX Creator](https://creator.wax.io) with your WAX AllAccess account:
+
+<img alt = "WAX Creator - Log In" src = "img/wax_creator_log_in.png">
