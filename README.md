@@ -44,6 +44,7 @@
 		* [Enable 2FA (Two-Factor Authentication)](#enable-2fa-two-factor-authentication)
 	* [Request a WAX Creator API Key](#request-a-wax-creator-api-key)
 	* [Install Dependencies](#install-dependencies-1)
+	* [Calling the API](#calling-the-api)
 
 # Overview
 
@@ -524,3 +525,62 @@ Create a `.php` file, name it `index.php`, place it inside of your `public_html`
 ```
 
 > **Note**: The `index.html`/`index.php` file is the entry point of any website.
+
+## Calling the API
+
+Calling the [WAX ExpressTrade API](https://github.com/OPSkins/trade-opskins-api) implies that you either send a [GET](https://www.w3schools.com/tags/ref_httpmethods.asp) or [POST](https://www.w3schools.com/tags/ref_httpmethods.asp) request to `https://api-trade.opskins.com`, this will tell the server to perform an action on its end and return a response.
+
+> **Note**: Calls to `api-trade.opskins.com` should always be executed over the `HTTPS` protocol; otherwise, your calls will be redirected and you will receive erroneous responses. `https://api-trade.opskins.com` is the default value for the `url` parameter in the `ExecuteAPICall` function (loaded from the `execute_api_call.php` extension).
+
+---
+
+All [endpoints](https://github.com/OPSkins/trade-opskins-api) of the WAX ExpressTrade API can be called using the same base structure. For instance, the [GetItems](https://github.com/OPSkins/trade-opskins-api/blob/master/IItem/GetItems.md) endpoint can be called as shown:
+
+```
+<?php
+	include_once "../includes/execute_api_call.php";
+
+	$response = ExecuteAPICall("GET", "IItem/GetItems/v1", array("key=Your API Key&sku_filter=100,102")); // method, endpoint, data (optional), url (optional - exists to call any other API besides WAX ExpressTrade)
+
+	if($response != NULL) // check if the WAX ExpressTrade API responded
+	{
+		$data = json_decode($response, true); // return an array to easily process the response
+
+		echo "status: " . $data['status'] . "<br><br>"; // example on how to access data in the array 
+
+		var_dump($data); // output the response for debugging purposes
+	}
+	else
+	{
+		echo "The WAX ExpressTrade API didn't respond, it may be offline or under maintenance";
+	}
+?>
+```
+
+The `data` parameter in the `ExecuteAPICall` function should be structured differently when sending requests to endpoints that use the `POST` method:
+
+```
+array("key" => "Your API Key", "sku_filter" => "100,102")
+```
+
+> **Note**: Your `API key` should be passed as `key` (as shown above). The [API documentation for WAX ExpressTrade](https://github.com/OPSkins/trade-opskins-api) doesn't specifically state this.
+
+All successful API responses have return data within the `response` object. A typical response may look like this:
+
+```
+{
+	"status": 1,
+	"time": 1528334546,
+	"response": {
+		"offer": {
+			"some_data": "here"
+		}
+	}
+}
+```
+
+> **Note**: If a response is paginated, the pagination details (`current_page` and `total_pages`) occur at the top-level of the object, not inside the `response` body.
+
+All status codes and their titles can be found [here](https://github.com/OPSkins/trade-opskins-api/issues/19#issuecomment-403122935). In some instances, the status code may be an HTTP status code (e.g. 404).
+
+> **Note**: OPSkins recognizes that mixing these codes isn't ideal. This will be fixed in the near future.
