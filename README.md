@@ -607,7 +607,7 @@ As you can see in the screenshot above, the request was successfully received by
 
 > **Note**: An **&** separates each parameter when using the `GET` method (you may have seen this in an URL of a website).
 
-A typical error response may look like this:
+When you receive an error, it may typically look like this:
 
 ```json
 {
