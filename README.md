@@ -43,6 +43,7 @@
 		* [Create an Account](#create-an-account)
 		* [Enable 2FA (Two-Factor Authentication)](#enable-2fa-two-factor-authentication)
 	* [Request a WAX Creator API Key](#request-a-wax-creator-api-key)
+	* [Install Dependencies](#install-dependencies-1)
 
 # Overview
 
@@ -503,3 +504,23 @@ Copy your **WAX Creator API Key** and keep it in hand as you'll need it later!
 > **Warning!** If you give your WAX Creator API Key to anyone, they can invoke the WAX Creator API on your behalf without your consent.
 
 > **Note**: If you ever lose your WAX Creator API Key or if you think it has been breached, you can always retrieve it or generate a new one on your [WAX Creator account page](https://creator.wax.io/user).
+
+## Install Dependencies
+
+As stated in the [overview](#overview) at the beginning of the tutorial, the first extension under `Recommended` will be used - you are free to use any [other extension](#extensions) however!
+
+Download `execute_api_call.php` (it can be downloaded from this repository) and place it inside your `includes` directory.
+
+> **Note**: If you skipped the part of the tutorial where the `includes` folder was created, simply create the folder outside of your `public_html` directory. You should place any file that can be dynamically included from your `public_html` directory inside the `includes` folder.
+
+> **Note**: If you are integrating the WAX ExpressTrade API into your website directly into a production environment and you didn't install an SSL certificate, you will need an **FTP client** ([FileZilla](https://filezilla-project.org) is highly recommended) to upload files to your VPS (click [here](#if-you-didnt-purchase-an-ssl-certificate-click-here-to-continue) and read the part addressing the use of an FTP client if you're having trouble connecting). If your website is hosted with a dedicated web hosting provider, you can use their web-based FTP client instead.
+
+Create a `.php` file, name it `index.php`, place it inside of your `public_html` directory, open the file with a text editor ([Sublime Text](https://www.sublimetext.com/3) is recommended) and include `execute_api_call.php` (or you can download the `index.php` file in this repository and simply place it inside of your `public_html` folder). Your `index.php` file should contain the following:
+
+```
+<?php
+	include_once "../includes/execute_api_call.php";
+?>
+```
+
+> **Note**: The `index.html`/`index.php` file is the entry point of any website.
