@@ -498,4 +498,4 @@ Go to your [WAX Creator account page](https://creator.wax.io/user) and hit `ENAB
 
 <img alt = "WAX Creator - Request API Key Step 2" src = "img/wax_creator_request_api_key_step_2.png">
 
-Copy your **WAX Creator API Key** and keep it in hand as you'll also need it later!
+Copy your **WAX Creator API Key** and keep it in hand as you'll need it later!
