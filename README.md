@@ -509,7 +509,7 @@ Copy your **WAX Creator API Key** and keep it in hand as you'll need it later!
 
 As stated in the [Overview](#overview) at the beginning of this tutorial, the first extension under `Recommended` will be used; however, you are free to use any [other extension](#extensions)!
 
-Download `execute_api_call.php` (it can be downloaded from this repository) and place it inside your `includes` directory.
+Download [Execute API Call](includes/execute_api_call.php) and place it inside your `includes` directory.
 
 > **Note**: If you skipped the part of the tutorial where the `includes` folder was created, simply create the folder outside of your `public_html` directory. You should place any file that can be dynamically included from your `public_html` directory inside the `includes` folder.
 
