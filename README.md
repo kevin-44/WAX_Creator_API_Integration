@@ -369,9 +369,7 @@ Finally, restart **Apache** for the changes to take effect:
 
 ## Set up an OPSkins Account
 
-OPSkins is pretty much the main platform of all WAX services that require authentication, being interconnected through [WAX AllAccess](https://all-access.wax.io).
-
-> **Note**: Although you can invoke the WAX ExpressTrade API without an OPSkins account, you are limiting the number of endpoints available to you. Features such as automatically receiving the **$0.25** commission (that is 10% of the base price of a [Skeleton Key](https://opskins.com/?app=1912_1&loc=shop_search&max=2.51&min=2.49&sort=lh&type=key)) per case opened from the [ICase](https://github.com/OPSkins/trade-opskins-api/tree/master/ICase)/[ICaseSite](https://github.com/OPSkins/trade-opskins-api/tree/master/ICaseSite) interface is also unavailable without an OPSkins account.
+OPSkins is pretty much the main platform of all WAX services that require authentication, being interconnected through [WAX AllAccess](https://all-access.wax.io). You'll find yourself using OPSkins a lot, so it's recommended that you start by creating an OPSkins account!
 
 ### Create an Account
 
