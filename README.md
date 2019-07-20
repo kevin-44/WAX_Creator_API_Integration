@@ -369,7 +369,7 @@ Finally, restart **Apache** for the changes to take effect:
 
 ## Set up an OPSkins Account
 
-OPSkins is pretty much the main platform of all WAX services that require authentication, being interconnected through [WAX AllAccess](https://all-access.wax.io). You'll find yourself using OPSkins a lot, so it's recommended that you start by creating an account there!
+OPSkins is pretty much the main platform for all WAX services that require authentication, being interconnected through [WAX AllAccess](https://all-access.wax.io). You'll find yourself using OPSkins a lot, so it's recommended that you start by creating an account there!
 
 ### Create an Account
 
