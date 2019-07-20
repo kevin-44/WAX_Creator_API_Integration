@@ -39,7 +39,7 @@
 			* [Create a New User](#create-a-new-user)
 			* [Install Dependencies](#install-dependencies)
 			* [Register a Domain & Configure Name-based Virtual Hosts](#register-a-domain--configure-name-based-virtual-hosts)
-	* [Set up an Account](#set-up-an-account)
+	* [Set up an OPSkins Account](#set-up-an-opskins-account)
 		* [Create an Account](#create-an-account)
 		* [Enable 2FA (Two-Factor Authentication)](#enable-2fa-two-factor-authentication)
 		* [Request an API Key](#request-an-api-key)
@@ -82,7 +82,7 @@ Know of an extension that isn't listed above? [Open an issue](../../issues) and 
 
 ## Beginners
 
-Before anything, you will need to install a [Web Server](https://en.wikipedia.org/wiki/Web_server) and [PHP](https://en.wikipedia.org/wiki/PHP). If you already know how to do this and you're not interested in registering a domain alongside the configuration that comes with it, skip to the [next step](#set-up-an-account); otherwise, you can click [here](#register-a-domain--configure-name-based-virtual-hosts) for information related to registering a domain and its configuration.
+Before anything, you will need to install a [Web Server](https://en.wikipedia.org/wiki/Web_server) and [PHP](https://en.wikipedia.org/wiki/PHP). If you already know how to do this and you're not interested in registering a domain alongside the configuration that comes with it, skip to the [next step](#set-up-an-opskins-account); otherwise, you can click [here](#register-a-domain--configure-name-based-virtual-hosts) for information related to registering a domain and its configuration.
 
 > **Note**: Instructions related to setting up a [MySQL Server](https://en.wikipedia.org/wiki/MySQL) won't be addressed in this tutorial; however, it's recommended that you go forward with the process if you plan on creating a website that serves user accounts, saves their settings and/or stores any other data in general.
 
@@ -183,7 +183,7 @@ Any website you create should be placed in `/var/www/html`. You can access one o
 
 #### Register a Domain & Configure Name-based Virtual Hosts
 
-Your website (or at least the `Apache2 Ubuntu Default Page`) should be accessible at this point. It's recommended that you assign a domain to your website if you plan on having visitors from all around the world; however, it isn't technically necessary - your visitors would just have trouble remembering your VPS' IP address! If you do not wish to assign a domain to your website, skip to the [next step](#set-up-an-account).
+Your website (or at least the `Apache2 Ubuntu Default Page`) should be accessible at this point. It's recommended that you assign a domain to your website if you plan on having visitors from all around the world; however, it isn't technically necessary - your visitors would just have trouble remembering your VPS' IP address! If you do not wish to assign a domain to your website, skip to the [next step](#set-up-an-opskins-account).
 
 ---
 
@@ -320,7 +320,7 @@ Finally, restart **Apache** for the changes to take effect:
 
 ---
 
-#### If you purchased an SSL certificate, click [here](#set-up-an-account) to continue.
+#### If you purchased an SSL certificate, click [here](#set-up-an-opskins-account) to continue.
 
 Configure the [Name-based Virtual Hosts](https://en.wikipedia.org/wiki/Virtual_hosting) so that your system knows what to do when someone visits your domain! For that:
 
@@ -367,3 +367,139 @@ Configure the [Name-based Virtual Hosts](https://en.wikipedia.org/wiki/Virtual_h
 Finally, restart **Apache** for the changes to take effect:
 
 `sudo systemctl restart apache2`
+
+## Set up an OPSkins Account
+
+An [OPSkins](https://opskins.com) account is required for some endpoints of the [WAX ExpressTrade API](https://github.com/OPSkins/trade-opskins-api); therefore, it is recommended that you create one!
+
+> **Note**: Although you can invoke the WAX ExpressTrade API without an OPSkins account, you are limiting the number of endpoints available to you. Features such as automatically receiving the **$0.25** commission (that is 10% of the base price of a [Skeleton Key](https://opskins.com/?app=1912_1&loc=shop_search&max=2.51&min=2.49&sort=lh&type=key)) per case opened from the [ICase](https://github.com/OPSkins/trade-opskins-api/tree/master/ICase)/[ICaseSite](https://github.com/OPSkins/trade-opskins-api/tree/master/ICaseSite) interface is also unavailable without an OPSkins account.
+
+### Create an Account
+
+You can create an OPSkins account by a) [signing in through Steam for the first time](https://opskins.com/?loc=login) or b) [entering your information in to a form](https://opskins.com/?loc=login&register):
+
+<img alt = "OPSkins - Sign in Through Steam" src = "img/opskins_sign_in_through_steam.png">
+
+<img alt = "OPSkins - Register" src = "img/opskins_register.png">
+
+### Enable 2FA (Two-Factor Authentication)
+
+Some [endpoints](https://github.com/OPSkins/trade-opskins-api) and [WAX ExpressTrade](https://trade.opskins.com) itself require **2FA** (*Two-Factor Authentication*) to be enabled on your account, you can do this with the help of your mobile device and the Google Authenticator app; however, it is recommended that you use a different app (this could also be an extension for your desktop browser, such as [Authenticator](https://chrome.google.com/webstore/detail/authenticator/bhghoamapcdpbohphigoooaddinpkbai?utm_source=chrome-ntp-icon) - highly recommended!) that shows you your `secret` as it is also required.
+
+> **Note**: Your `secret` is required to generate a valid two-factor authentication code programmatically. For instance, the [SendOfferToSteamId](https://github.com/OPSkins/trade-opskins-api/blob/master/ITrade/SendOfferToSteamId.md) endpoint requires that you pass your current valid 2FA code in the request.
+
+---
+
+Go to your [OPSkins account security page](https://opskins.com/?loc=store_account#collapseSec) and hit the `Enable Two-Factor Authentication` button:
+
+<img alt = "OPSkins - Enable 2FA Step 1" src = "img/opskins_enable_2fa_step_1.png">
+
+A modal will prompt asking you to enter a one-time code that was sent to your email. Get the code and enter it:
+
+<img alt = "OPSkins - Enable 2FA Step 2" src = "img/opskins_enable_2fa_step_2.png">
+
+<img alt = "OPSkins - Enable 2FA Step 3" src = "img/opskins_enable_2fa_step_3.png">
+
+After submitting the one-time code, another modal will prompt. On the Authenticator browser extension (or with the 2FA app/extension of your choice - instructions may vary), click on the `Scan QR Code` icon located on the top right corner, select the barcode with your cursor by holding down left click on your mouse, and then let go:
+
+<img alt = "OPSkins - Enable 2FA Step 4" src = "img/opskins_enable_2fa_step_4.png">
+
+<img alt = "OPSkins - Enable 2FA Step 5" src = "img/opskins_enable_2fa_step_5.png">
+
+If the selection of the barcode was successful, a browser alert should prompt stating that your account has been added:
+
+<img alt = "OPSkins - Enable 2FA Step 6" src = "img/opskins_enable_2fa_step_6.png">
+
+> **Note**: You can alternatively add your account by entering the secret shown on the second modal on Authenticator (this can be done by clicking on the `Edit` icon - it's located on the top far right corner). **This secret is the same secret (but without the whitespaces) you need to generate a valid two-factor authentication code programmatically; however, it is recommended that you learn how to obtain it from the Authenticator extension in case you lose/forget it in the future.**
+
+On Authenticator, click on the `Settings` icon located on the top left corner and hit `Sync Clock with Google`:
+
+<img alt = "OPSkins - Enable 2FA Step 7" src = "img/opskins_enable_2fa_step_7.png">
+
+<img alt = "OPSkins - Enable 2FA Step 8" src = "img/opskins_enable_2fa_step_8.png">
+
+<img alt = "OPSkins - Enable 2FA Step 9" src = "img/opskins_enable_2fa_step_9.png">
+
+> **Note**: This step is vital, the shown two-factor authentication code may be invalid otherwise.
+
+Enter the current valid two-factor authentication code shown on Authenticator:
+
+<img alt = "OPSkins - Enable 2FA Step 10" src = "img/opskins_enable_2fa_step_10.png">
+
+After successfully enabling 2FA on your OPSkins account, you can now obtain your `secret` from the Authenticator extension! Click on the `Settings` icon, hit the `Export / Import` option, and then press the `Download Backup File` button:
+
+<img alt = "OPSkins - Enable 2FA Step 7" src = "img/opskins_enable_2fa_step_7.png">
+
+<img alt = "OPSkins - Enable 2FA Step 11" src = "img/opskins_enable_2fa_step_11.png">
+
+<img alt = "OPSkins - Enable 2FA Step 12" src = "img/opskins_enable_2fa_step_12.png">
+
+A `.json` file will begin to download. If you open it you'll see a similar multidimensional [JSON array](https://www.w3schools.com/js/js_json_arrays.asp) as to the one below:
+
+```
+{
+	"3e44a51d4b5cad98c34f5f3658e35c73": {
+		"account": "76569192284382175",
+		"counter": 0,
+		"encrypted": false,
+		"hash": "3e44a51d4b5cad98c34f5f3658e35c73",
+		"index": 0,
+		"issuer": "OPSkins",
+		"secret": "IUPQTTSIL5WIDUNS",
+		"type": "totp"
+	}
+}
+```
+
+The only value you need from this `.json` file is `secret` (in case of the example above, that value is `IUPQTTSIL5WIDUNS`) - keep that value in hand as you may need it depending on the features you plan on adding to your website!
+
+**(Optional)** If you are unfamiliar with JSON arrays and have more than one account added to Authenticator, you'll see more entires as shown below:
+
+```
+{
+	"3e44a51d4b5cad98c34f5f3658e35c73": {
+		"account": "76569192284382175",
+		"counter": 0,
+		"encrypted": false,
+		"hash": "3e44a51d4b5cad98c34f5f3658e35c73",
+		"index": 0,
+		"issuer": "OPSkins",
+		"secret": "IUPQTTSIL5WIDUNS",
+		"type": "totp"
+	},
+	"313b6cb61386cb8f535cd74f2a5ea17c": {
+		"account": "76561147468942173",
+		"counter": 0,
+		"encrypted": false,
+		"hash": "313b6cb61386cb8f535cd74f2a5ea17c",
+		"index": 0,
+		"issuer": "OPSkins",
+		"secret": "BVXFQ1S7YCDP71J4",
+		"type": "totp"
+	}
+}
+```
+
+Simply find the right entry (base your search on the `account` index), make sure the `issuer` is `OPSkins` and get your `secret` from the array.
+
+### Request an API Key
+
+As there are endpoints that require a 2FA code, there also are endpoints that require an API key.
+
+> **Note**: The [ICase](https://github.com/OPSkins/trade-opskins-api/tree/master/ICase)/[ICaseSite](https://github.com/OPSkins/trade-opskins-api/tree/master/ICaseSite) interface requires a completely different API key. That API key can be obtained by creating a special case-website user with the [CreateVCaseUser](https://github.com/OPSkins/trade-opskins-api/blob/master/IUser/CreateVCaseUser.md) endpoint.
+
+---
+
+Go to your [OPSkins advanced account options page](https://opskins.com/?loc=store_account#collapseAA), tick the `I have read and agree to the API Terms of Use` checkbox and hit the `Request API Key` button:
+
+<img alt = "OPSkins - Request API Key Step 1" src = "img/opskins_request_api_key_step_1.png">
+
+A modal will prompt, enter your 2FA code:
+
+<img alt = "OPSkins - Request API Key Step 2" src = "img/opskins_request_api_key_step_2.png">
+
+You will then be issued an API key - along with your 2FA `secret`, keep it in hand as you'll also need it depending on what you plan on adding to your website!
+
+> **Warning!** If you give your API key to anyone, they can steal all of your items.
+
+> **Note**: If you ever lose your API key or if you think it has been breached, you can always retrieve it or generate a new one on your [OPSkins advanced account options page](https://opskins.com/?loc=store_account#collapseAA).
