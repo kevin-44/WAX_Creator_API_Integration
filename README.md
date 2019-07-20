@@ -434,7 +434,7 @@ After successfully enabling 2FA for your OPSkins account, you can now obtain you
 
 A `.json` file will begin to download. If you open it you'll see a similar multidimensional [JSON Array](https://www.w3schools.com/js/js_json_arrays.asp) as to the one below:
 
-```
+```json
 {
 	"3e44a51d4b5cad98c34f5f3658e35c73": {
 		"account": "76569192284382175",
@@ -453,7 +453,7 @@ The only value you need from this `.json` file is `secret` (in case of the examp
 
 **(Optional)** If you are unfamiliar with JSON arrays and have more than one account added to Authenticator, you'll see more entires as shown below:
 
-```
+```json
 {
 	"3e44a51d4b5cad98c34f5f3658e35c73": {
 		"account": "76569192284382175",
@@ -518,7 +518,7 @@ Download [Execute API Call](includes/execute_api_call.php) and place it inside y
 
 Create a `.php` file, name it `index.php`, place it inside of your `public_html` directory, open the file with a text editor ([Sublime Text](https://www.sublimetext.com/3) is recommended) and include `execute_api_call.php` (or you can download the `index.php` file in this repository and simply place it inside of your `public_html` folder). Your `index.php` file should contain the following:
 
-```
+```php
 <?php
 	include_once "../includes/execute_api_call.php";
 ?>
