@@ -620,3 +620,7 @@ When you receive an error, it may typically look like this:
 See the [API Documentation for the WAX Creator](https://github.com/worldwide-asset-exchange/wax-creator) to view all the other interfaces/endpoints you can call in the same manner as the `create` & `read` endpoint (as previously shown above).
 
 # Related APIs
+
+- [OAuth Implementation](https://docs.opskins.com/public/en.html#oauth) - Allows you to add a 'Login via WAX' button in your application and interact with the user's account using WAX Trade and OPSkins APIs.
+- [WAX Trade API](https://github.com/OPSkins/trade-opskins-api) - May be used to retrieve user's inventory, manage trade offers, see meta-data of WAX NFTs, and much more.
+- [OPSkins API](https://docs.opskins.com/public/en.html#opskins-api-v2) - May be used to purchase or sell items on OPSkins, check lowest prices of items, handle cashouts, and much more.
